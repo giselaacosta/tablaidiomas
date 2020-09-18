@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+<ion-item>
+  <ion-label>
+   Ingrese Correo:
+  </ion-label>
+  <ion-input type="text" [(ngModel)]="user.email"></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label>
+    Ingrese Contraseña:
+  </ion-label>
+  <ion-input type="text" [(ngModel)]="user.password"></ion-input>
+</ion-item>
+<ion-item-divider>
+  <ion-button size="large" (click)="onLogin()">Ingresar</ion-button>
+  <ion-button size="large"  (click)="onRegisterLogin()">Nuevo Usuario</ion-button>
+
+</ion-item-divider>
+</ion-content>
