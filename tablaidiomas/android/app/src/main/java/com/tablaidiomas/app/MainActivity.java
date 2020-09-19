@@ -1,4 +1,4 @@
-package io.ionic.starter;
+package com.tablaidiomas.app;
 
 import android.os.Bundle;
 
