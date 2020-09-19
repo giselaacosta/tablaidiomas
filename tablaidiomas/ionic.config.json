@@ -1,7 +1,8 @@
 {
   "name": "tablaidiomas",
   "integrations": {
-    "capacitor": {}
+    "capacitor": {},
+    "cordova": {}
   },
   "type": "angular"
 }
