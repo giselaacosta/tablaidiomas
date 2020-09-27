@@ -19,4 +19,9 @@
     <style name="AppTheme.NoActionBarLaunch" parent="AppTheme.NoActionBar">
         <item name="android:background">@drawable/splash</item>
     </style>
+    <style name="SplashScreen" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:background">#B9E3F6</item> <!-- This line is changing the actionbar color
+        <item name="android:windowBackground">#000000</item>
+        <item name="android:colorBackground">#000000</item> -->
+    </style>
 </resources>
