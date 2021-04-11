@@ -1,25 +1,81 @@
-<ion-header>
-  <ion-toolbar color="primary">
-    <ion-title>Login</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content>
 
-<ion-content padding>
-<ion-item>
-  <ion-label>
-   Ingrese Correo:
-  </ion-label>
-  <ion-input type="text" [(ngModel)]="user.email"></ion-input>
-</ion-item>
-<ion-item>
-  <ion-label>
-    Ingrese Contraseña:
-  </ion-label>
-  <ion-input type="text" [(ngModel)]="user.password"></ion-input>
-</ion-item>
-<ion-item-divider>
-  <ion-button size="large" (click)="onLogin()">Ingresar</ion-button>
-  <ion-button size="large"  (click)="onRegisterLogin()">Nuevo Usuario</ion-button>
-
-</ion-item-divider>
-</ion-content>
+    <ion-grid class="grid1">
+    
+        <ion-row class="row1">
+            <ion-col>
+    
+            </ion-col>
+        </ion-row>
+    
+     
+    
+    </ion-grid>
+    
+    <ion-slide>
+        <div class="contaier-login">
+          <form [formGroup]="loginForm">
+            <ion-grid>
+                <ion-row>
+                    <ion-col>
+                        <h1>Iniciar Sesión</h1>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <ion-list>
+                          <ion-item >
+                              <ion-icon name="person" class="icon-login"></ion-icon>
+                              <ion-input  [(ngModel)]="user.email" type="text" class="form-control"  formControlName="email"  required placeholder="Usuario"></ion-input>
+                          </ion-item>
+                          <br />
+                          <ion-item >
+                              <ion-icon name="lock" class="icon-login"></ion-icon>
+                              <ion-input [(ngModel)]="user.password" type="password"class="form-control"  formControlName="password" required placeholder="Contraseña"></ion-input>
+                          </ion-item>
+    
+                        </ion-list>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <ion-button  (click)="onLogin()" fill="solid" expand="full">
+                            Entrar
+                        </ion-button>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <ion-label>
+                            <h3>¿No tenes cuenta?</h3>
+                        </ion-label>
+                        <ion-button  (click)="onRegisterLogin()" fill="solid" expand="full">
+                          Registrarse
+                      </ion-button>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col>
+                      <ion-button  (click)="AutocompletarAdmin()" >
+                          ADMIN
+                      </ion-button>
+                      <ion-button  (click)="AutocompletarInvitado()" >
+                          INVITADO
+                      </ion-button>
+                      <ion-button  (click)="AutocompletarUsuario()" >
+                          USUARIO
+                      </ion-button>
+                      <ion-button  (click)="AutocompletarAnonimo()"  >
+                          ANONIMO
+                      </ion-button>
+                      <ion-button  (click)="AutocompletarTester()"  >
+                          TESTER
+                      </ion-button>
+                  </ion-col>
+              </ion-row>
+            </ion-grid>
+          
+          </form>
+        </div>
+    </ion-slide>
+  

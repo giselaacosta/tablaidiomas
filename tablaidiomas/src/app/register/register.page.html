@@ -1,24 +1,64 @@
-<ion-header>
-  <ion-toolbar color="primary">
-    <ion-title>Register</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content>
 
-<ion-content padding>
-  <ion-item>
-    <ion-label>
-     Ingrese Correo:
-    </ion-label>
-    <ion-input type="text" [(ngModel)]="user.email"></ion-input>
-  </ion-item>
-  <ion-item>
-    <ion-label>
-      Ingrese Contraseña:
-    </ion-label>
-    <ion-input type="text" [(ngModel)]="user.password"></ion-input>
-  </ion-item>
-<ion-item-divider>
-  <ion-button size="large" (click)="onRegister()">Register</ion-button>
-  <ion-button size="large" (click)="onHome()">Volver atras</ion-button>
-</ion-item-divider>
-</ion-content>
+  <ion-grid class="grid1">
+  
+      <ion-row class="row1">
+          <ion-col>
+  
+          </ion-col>
+      </ion-row>
+  
+      <ion-row class="row2">
+          <ion-col>
+  
+          </ion-col>
+      </ion-row>
+  
+  </ion-grid>
+  
+  <ion-slide>
+      <div class="container-login">
+          <ion-grid>
+              <ion-row>
+                  <ion-col>
+                      <h1>Registrarse</h1>
+                  </ion-col>
+              </ion-row>
+              <ion-row>
+                  <ion-col>
+                      <ion-list>
+  
+                          <ion-item>
+                              <ion-icon name="person" class="icon-login"></ion-icon>
+                              <ion-input name="user" [(ngModel)]="user.email" type="text" required placeholder="Usuario"></ion-input>
+                          </ion-item>
+                          <br />
+                          <ion-item>
+                              <ion-icon name="lock" class="icon-login"></ion-icon>
+                              <ion-input name="password" [(ngModel)]="user.password" type="password" required placeholder="Contraseña"></ion-input>
+                          </ion-item>
+  
+                      </ion-list>
+                  </ion-col>
+              </ion-row>
+              <ion-row>
+                  <ion-col>
+                      <ion-button   (click)="onRegister()" fill="solid" expand="full">
+                          Completar Registro
+                      </ion-button>
+                  </ion-col>
+              </ion-row>
+              <ion-row>
+                  <ion-col>
+                      <ion-label>
+                          <h3>Ya tenes cuenta?</h3>
+                      </ion-label>
+                      <ion-button  (click)="onHome()" fill="solid" expand="full">
+                        Loguearse
+                    </ion-button>
+                  </ion-col>
+              </ion-row>
+            
+          </ion-grid>
+      </div>
+  </ion-slide>

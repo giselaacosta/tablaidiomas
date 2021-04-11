@@ -1,6 +1,6 @@
 {
-  "appId": "com.tablaidiomas.app",
-  "appName": "tablaidiomas",
+  "appId": "com.tablasdeidiomas.app",
+  "appName": "tablasdeidiomas",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "www",

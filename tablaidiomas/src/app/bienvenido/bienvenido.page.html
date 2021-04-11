@@ -1,15 +1,18 @@
 <ion-header>
   <ion-toolbar color="primary">
-    <ion-title>Bienvenido</ion-title>
+    <ion-title style="font-family: 'Roboto Bold'; text-align: center">Inicio</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="LogOut()">
+        SALIR
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content class="no-scroll">
+  <div style="display: flex; flex-direction:column; height:100%">
 
-  <ion-item-divider>
- 
-    <ion-button size="large" (click)="logOut()" >Volver a menu principal</ion-button>
+  </div>
+
   
-
-  </ion-item-divider>
-  </ion-content>
+</ion-content>

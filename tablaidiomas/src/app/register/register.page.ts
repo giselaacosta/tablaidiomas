@@ -38,7 +38,7 @@ export class RegisterPage {
   {
    
       
-      this.router.navigateByUrl('/home');
+      this.router.navigateByUrl('/login');
 
     
   }

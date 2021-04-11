@@ -17,7 +17,7 @@ export class ErrorPage implements OnInit {
    
     {
       console.log('Vuelvo a register');
-      this.router.navigateByUrl('/home');
+      this.router.navigateByUrl('/login');
     }
   }
 }
